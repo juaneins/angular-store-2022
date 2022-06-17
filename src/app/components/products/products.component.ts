@@ -14,7 +14,7 @@ export class ProductsComponent implements OnInit {
 
   products: Product[] = [];
   today = new Date();
-  oneDate = new Date(2022, 5, 24);
+  oneDate = new Date(2022, 2, 24);
 
   constructor(
     private storeService: StoreService,
