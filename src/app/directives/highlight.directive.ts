@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
-
+// las directivas sirven para realizar manipulaciones al DOM
 @Directive({
   selector: '[appHighlight]',
 })
