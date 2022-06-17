@@ -27,8 +27,8 @@ export class ImgComponent
   }
   @Output() loaded = new EventEmitter<string>();
   imageDefault = './assets/images/hackerman.jpeg';
-  counter = 0;
-  counterFn: number | undefined;
+  // counter = 0;
+  // counterFn: number | undefined;
 
   constructor() {
     // before render
@@ -39,7 +39,7 @@ export class ImgComponent
   ngOnDestroy(): void {
     // run when delete the component
     console.log('ngOnDestroy', 'imgValue=> ', this.img);
-    window.clearInterval(this.counterFn);
+    // window.clearInterval(this.counterFn);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -53,10 +53,10 @@ export class ImgComponent
     // before render
     // async - fetch -- runs one time
     console.log('ngOnInit ', 'imgValue=> ', this.img);
-    this.counterFn = window.setInterval(() => {
-      this.counter++;
-      console.log('run counter');
-    }, 1000);
+    // this.counterFn = window.setInterval(() => {
+    //   this.counter++;
+    //   console.log('run counter');
+    // }, 1000);
   }
 
   ngAfterViewInit(): void {
